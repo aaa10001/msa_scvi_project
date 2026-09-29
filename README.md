@@ -1,0 +1,2 @@
+# msa_scvi_project
+本文研究单细胞RNA测序聚类，提出将Marker基因先验提前引入。先筛选Marker并与高变基因融合，用scVI学习低维表示，再用高置信Marker原型修正，最后做多尺度Leiden聚类、共识聚类和二次细分。在Tabula Muris Senis的6个组织数据集上，与DEC、scDSC、scMAE、scVI_Leiden、Seurat对比。结果表明，Lung、Kidney等复杂组织中聚类更稳定，Pancreas等差异较小；细胞状态连续变化时边界仍不稳定。
